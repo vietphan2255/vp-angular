@@ -1,0 +1,7 @@
+<div class="not-found-container" *ngIf="notFound; else itemFound">
+  <h3>Not Found</h3>
+  <p>Item you requested could not be found</p>
+</div>
+<ng-template #itemFound>
+  <ng-content></ng-content>
+</ng-template>
